@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "表白墙",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#ffa5a5",
+    "enablePullDownRefresh": true
+}

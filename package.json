@@ -1,0 +1,20 @@
+{
+  "name": "schoolhelp",
+  "version": "1.0.0",
+  "description": "一个集合表白墙、失物招领、兼职和闲置二手买卖的云开发微信小程序\r # 校园服务小程序\r 拥有 表白墙、失物招领、兼职、闲置物品等功能，无后台，云开发，只需要搭建云数据库即可",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mindmaster1/BISTUNewLife.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mindmaster1/BISTUNewLife.git/issues"
+  },
+  "homepage": "https://github.com/mindmaster1/BISTUNewLife#readme"
+ 
+}

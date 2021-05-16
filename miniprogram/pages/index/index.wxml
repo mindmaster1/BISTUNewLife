@@ -1,0 +1,136 @@
+<view class="all">
+
+	<!-- 轮播图界面 -->
+	<swiper
+	 autoplay="true"
+	 interval="5000"
+	 indicator-dots="true"
+	 indicator-color="#80ff00"
+	 indicator-active-color="#000000"
+	>
+		<swiper-item>
+			<image src="https://s4.ax1x.com/2021/03/20/6hPacj.jpg"></image>
+		</swiper-item>
+		<swiper-item>
+			<image src="https://s3.ax1x.com/2021/02/03/yl97DJ.png"></image>
+		</swiper-item>
+
+		<swiper-item>
+			<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/beautyview.jpg" />
+		</swiper-item>
+
+	</swiper>
+
+	<view class="top_notice">
+		<view class="notice_title">
+			<labal>公告:</labal>
+		</view>
+		<swiper
+		 class="swiper_notice"
+		 circular
+		 vertical
+		 autoplay="{{true}}"
+		>
+			<block wx:for="{{notice}}" wx:key="index">
+				<swiper-item bindtap="checkNotice">
+					{{item.noticeDetail}}
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+
+	<view class="line">
+		<view class="box" bindtap="biaobai">
+			<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/biaobai.png"></image>
+			<view>表白墙</view>
+		</view>
+
+		<view class="box" bindtap="lost">
+			<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/lost.png"></image>
+			<view>失物招领</view>
+		</view>
+	</view>
+
+	<view class="line">
+		<view class="box" bindtap="work">
+			<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/work.png "></image>
+			<view>兼职</view>
+		</view>
+
+		<view class="box" bindtap="xianzhi">
+			<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/xianzhi.png "></image>
+			<view>闲置买卖</view>
+		</view>
+	</view>
+
+	<view class="line">
+		<view class="box" bindtap="searchkong">
+			<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/jiaoshi.png"></image>
+			<view>空闲教室</view>
+		</view>
+
+		<view class="box" bindtap="notice">
+			<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/notice.png"></image>
+			<view>校园通知</view>
+		</view>
+	</view>
+
+	<view class="line">
+		<view class="box" bindtap="weather">
+			<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/weather.png"></image>
+			<view>天气查询</view>
+		</view>
+
+		<view class="box" bindtap="heuzo">
+			<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/hezuo.png"></image>
+			<view>商务合作</view>
+		</view>
+	</view>
+
+	<!-- 悬浮菜单 -->
+	<view class='menus'>
+		<image
+		 src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/weather/share_circle.png"
+		 animation="{{animationOne}}"
+		 class="menu"
+		></image>
+		<button
+		 plain='true'
+		 open-type='share'
+		 animation="{{animationOne}}"
+		 class='menu share'
+		></button>
+		<image
+		 src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/weather/setting.png"
+		 animation="{{animationTwo}}"
+		 class="menu"
+		 catchtap="menuToSetting"
+		></image>
+		<image
+		 src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/weather/location.png "
+		 animation="{{animationThree}}"
+		 class="menu"
+		 catchtap="menuToCitychoose"
+		></image>
+		<image
+		 src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/weather/info.png "
+		 animation="{{animationFour}}"
+		 class="menu"
+		 catchtap="menuToAbout"
+		></image>
+		<movable-area scale-area="false">
+			<movable-view
+			 x="{{x}}"
+			 y="{{y}}"
+			 direction="all"
+			 animation="{{animationMain}}"
+			 catchtap="menuMain"
+			>
+
+			</movable-view>
+		</movable-area>
+
+	</view>
+
+</view>
+

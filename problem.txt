@@ -1,0 +1,5 @@
+1.   初始页面index搭建完成
+2.   开始搭建广告页面：定时器功能跳转
+3.    CSS padding填充
+4.   navigateto和switchTab的区别
+5.     使用小程序原生的WeUI组件库

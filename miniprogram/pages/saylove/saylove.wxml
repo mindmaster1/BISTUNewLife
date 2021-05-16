@@ -1,0 +1,19 @@
+<view hidden='{{onshow}}'>
+	<view class="biaobai">
+		<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/biaobai.jpg" />
+	</view>
+	<view class="sayLove-page">
+		<view class="chest">
+
+			<view class="heart left side top"></view>
+			<view class="heart center"></view>
+			<view class="heart right side"></view>
+
+			<!-- <view class="more-unfold">
+        <image class="more-unfold-img" src=" https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images01/more_unfold.png"></image>
+      </view> -->
+		</view>
+
+	</view>
+</view>
+

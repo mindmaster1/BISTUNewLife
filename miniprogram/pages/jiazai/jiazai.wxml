@@ -1,0 +1,5 @@
+<view class="container">
+	<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/girl.jpg"></image>
+	<text catchtap="cliadv">跳过广告 {{time}}</text>
+</view>
+

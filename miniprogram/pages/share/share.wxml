@@ -1,0 +1,47 @@
+<view class="line">
+		<view class="box" bindtap="biaobai">
+			<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/biaobai.png"></image>
+			<view>情头配对</view>
+		</view>
+
+		<view class="box" bindtap="lost">
+			<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/lost.png"></image>
+			<view>垃圾分类</view>
+		</view>
+	</view>
+
+	<view class="line">
+		<view class="box" bindtap="work">
+			<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/work.png "></image>
+			<view>动物识别</view>
+		</view>
+
+		<view class="box" bindtap="xianzhi">
+			<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/xianzhi.png "></image>
+			<view>植物识别</view>
+		</view>
+	</view>
+
+	<view class="line">
+		<view class="box" bindtap="searchkong">
+			<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/jiaoshi.png"></image>
+			<view>图像作战</view>
+		</view>
+
+		<view class="box" bindtap="notice">
+			<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/notice.png"></image>
+			<view>情绪识别</view>
+		</view>
+	</view>
+
+	<view class="line">
+		<view class="box" bindtap="weather">
+			<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/weather.png"></image>
+			<view>语音合成</view>
+		</view>
+
+		<view class="box" bindtap="heuzo">
+			<image src="https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/images/hezuo.png"></image>
+			<view>IDOL识别</view>
+		</view>
+	</view>

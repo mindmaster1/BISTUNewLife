@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/garbage/garbage-index/garbage-index",
+    "pages/jiazai/jiazai",
+    "pages/work/work",
+    "pages/temp/temp",
+    "pages/biaobai/biaobai",
+    "pages/mine/mine",
+    "pages/mine/about/about",
+    "pages/lost/lost",
+    "pages/xianzhi/xianzhi",
+    "pages/send/send",
+    "pages/classroom/classroom",
+    "pages/notice/notice",
+    "pages/sayLove-detail/sayLove-detail",
+    "pages/saylove/saylove",
+    "pages/love-detail/love-detail",
+    "pages/sound-detail/sound-detail",
+    "pages/public-sound/public-sound",
+    "pages/public-text/public-text",
+    "pages/publish-text/publish-text",
+    "pages/luntan/luntan",
+    "pages/share/share",
+    "pages/weather/index/index",
+    "pages/weather/citychoose/citychoose",
+    "pages/garbage/garbage-search/garbage-search"
+  ],
+  "tabBar": {
+    "color": "#7f8389",
+    "selectedColor": "#00a8f3",
+    "borderStyle": "black",
+    "backgroundColor": "#f7f7fa",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home1.png"
+      },
+      {
+        "pagePath": "pages/luntan/luntan",
+        "text": "校园论坛",
+        "iconPath": "images/luntan.png",
+        "selectedIconPath": "images/luntan1.png"
+      },
+      {
+        "pagePath": "pages/share/share",
+        "text": "AI体验",
+        "iconPath": "images/share.png",
+        "selectedIconPath": "images/share1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine1.png"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#00a8f3",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "定位以获取当前位置天气信息"
+    }
+  },
+  "cloud": true,
+  "sitemapLocation": "sitemap.json"
+}

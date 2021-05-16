@@ -1,0 +1,140 @@
+page{
+  background-size: cover;
+  width: 100vw;
+  background-color: #f7f7f7;
+}
+image{
+  width: 100%;
+  height: 30vh
+}
+swiper{
+  height: 30vh;
+  /* box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.2); */
+  border-radius: 20rpx;
+
+}
+swiper-item{
+  border-radius: 20rpx;
+}
+
+.all{
+  width: 95vw;
+  margin: auto;
+  margin-top: 3vw;
+}
+.line{
+  margin: auto;
+  width: 95vw;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+.box{
+  display: flex;
+  flex-direction: row;
+  background-color: #82b3fc;
+  border-radius: 15rpx;
+  margin-top: 20rpx;
+  width: 46vw;
+  height: 20vw;
+  justify-content: left;
+  font-size: 35rpx;
+  /* box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.2); */
+}
+.box:active{
+  display: flex;
+  flex-direction: row;
+  background-color: #418dff;
+  border-radius: 15rpx;
+  margin-top: 20rpx;
+  width: 46vw;
+  height: 20vw;
+  justify-content: left;
+  font-size: 35rpx;
+  /* box-shadow: 10rpx 10rpx 10rpx rgba(0, 255, 186, 0.5); */
+}
+.box image{
+  width: 15vw;
+  height: 15vw;
+  margin: 3vw 20rpx;
+}
+.box view{
+  height: 20vw;
+  line-height: 20vw;
+  color: white;
+}
+
+.top_notice {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  margin-top:5px;
+}
+
+.notice_title {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  font-weight: 800;
+  color: cadetblue;
+  padding: 10rpx;
+}
+
+.swiper_notice {
+  width: 87%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-weight: bold;
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+  color: cadetblue;
+}
+
+
+.swiper_notice swiper-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menus .menu,
+  .menus .share {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 100;
+    bottom: 150rpx;
+    right: 70rpx;
+    opacity: 0;
+  }
+  .menus .share {
+    background: rgba(0, 0, 0, 0);
+  }
+  .menus .main {
+    opacity: 1;
+  }
+
+  movable-area{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0rpx;
+    top: 0rpx;
+    z-index: 99;
+    pointer-events: none;
+  }
+  movable-view{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 80rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(240, 242, 245, 0.7);
+    border: 4rpx solid rgba(153, 153, 153, 1);
+    pointer-events: auto;
+  }
+ 

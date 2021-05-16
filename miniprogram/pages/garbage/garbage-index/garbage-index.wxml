@@ -1,0 +1,140 @@
+<!-- 公告栏 -->
+<view class='board'>
+
+	<view class='board-title'>
+		<text style='color: orange;font-weight: bold;'>AiWorks</text>
+		<view style='font-weight: bold;border-right: 1px solid lightgrey;padding-right: 5px;'>公告</view>
+	</view>
+
+	<view class='board-content'>
+		<swiper
+		 circular='true'
+		 autoplay="{{autoplay}}"
+		 interval="{{interval2}}"
+		 duration="{{duration2}}"
+		 style='height: 9vh;line-height:9vh;'
+		>
+			<block
+			 wx:for="{{list}}"
+			 wx:for-index="i"
+			 wx:for-item="item"
+			 wx:key="key"
+			>
+				<swiper-item>
+					<text bindtap='test{{i}}'>{{item}}</text>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+
+</view>
+<!--=====公告栏=========-->
+
+<view class="cu-bar bg-darkGray search" bindtap="goSearch">
+	<view class=" search-form  round ">
+		<text class="cuIcon-search text-green"></text>
+		<input
+		 type="text"
+		 placeholder="输入垃圾名称"
+		 confirm-type="search"
+		 bindinput="searchIcon"
+		></input>
+	</view>
+</view>
+
+<!-- =========首页选项========== -->
+<view class='buttons' style='width: {{windowWidth}}px;height: {{0.5*windowHeight}}px;'>
+
+	<view class='button-top' style='width: {{windowWidth}}px;height: {{0.25*windowHeight}}px'>
+
+		<view
+		 class='button-top-left'
+		 data-index="{{idx[0]}}"
+		 bindtap='onClick'
+		 style='width: {{btnSize}}px;height: {{0.8*btnSize}}px;'
+		>
+
+			<!-- <image src='../../images/RecycleableWaste.jpg' class='index-logo' style='height:120rpx;width:120rpx;'></image> -->
+			<image
+			 src='{{ColorList[0]}}'
+			 class='index-logo'
+			 style='height:120rpx;width:120rpx;'
+			></image>
+
+			<!-- <text style='font-size: 16px;'>可回收垃圾</text> -->
+		</view>
+
+		<view
+		 class='button-top-right'
+		 data-index="{{idx[1]}}"
+		 style='width: {{btnSize}}px;height: {{0.8*btnSize}}px;'
+		 bindtap='onClick'
+		>
+
+			<!-- <image src='../../images/HazardouAwaste.jpg' class='index-logo' style='height:120rpx;width:120rpx;'></image> -->
+			<image
+			 src='{{ColorList[1]}}'
+			 class='index-logo'
+			 style='height:120rpx;width:120rpx;'
+			></image>
+
+			<!-- <text style='font-size: 16px;'>有害垃圾</text> -->
+		</view>
+	</view>
+
+	<view class='button-bottom' style='width: {{windowWidth}}px;height: {{0.25*windowHeight}}px'>
+
+		<view
+		 class='button-bottom-left'
+		 data-index='{{idx[2]}}'
+		 bindtap='onClick'
+		 style='width: {{btnSize}}px;height: {{0.8*btnSize}}px;'
+		>
+
+			<!-- <image src='../../images/HouseholdfoodWaste.jpg' class='index-logo' style='height:120rpx;width:120rpx;'></image> -->
+			<image
+			 src='{{ColorList[2]}}'
+			 class='index-logo'
+			 style='height:120rpx;width:120rpx;'
+			></image>
+
+			<!-- <text style='font-size: 16px;'>湿垃圾</text> -->
+		</view>
+
+		<view
+		 class='button-bottom-right'
+		 data-index="{{idx[3]}}"
+		 bindtap='onClick'
+		 style='width: {{btnSize}}px;height: {{0.8*btnSize}}px;'
+		>
+
+			<!-- <image src='../../images/ResidualWaste.png' class='index-logo' style='height:120rpx;width:120rpx;'></image> -->
+			<image
+			 src='{{ColorList[3]}}'
+			 class='index-logo'
+			 style='height:120rpx;width:120rpx;'
+			></image>
+
+			<!-- <text style='font-size: 16px;'>干垃圾</text> -->
+		</view>
+
+	</view>
+</view>
+
+<view
+ class='button-center'
+ style='top: -{{0.25*windowHeight+0.5*btnSize}}px;height: {{btnSize}}px; width: {{btnSize}}px;'
+ bindtap='toUser'
+>
+	<view class='button-center-two' style='height: {{0.9*btnSize}}px;width: {{0.9*btnSize}}px;background-color: #F2F2F2; border-radius: 50%;margin: auto auto;position:relative;  display: flex;flex-direction: column;justify-content: center;align-items: center;'>
+		<view class='button-center-three' style='height: {{0.8*btnSize}}px;width: {{0.8*btnSize}}px;background-color: white; border-radius: 50%;margin: auto auto;position:relative;  display: flex;flex-direction: column;justify-content: center;align-items: center;'>
+			<view class='button-center-inner' style='height: {{0.7*btnSize}}px;width: {{0.7*btnSize}}px;'>
+				<image src='https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/garbage/no_data.png' class='index-logo'></image>
+				<text>回收站</text>
+			</view>
+		</view>
+	</view>
+
+</view>
+<!-- =========首页选项========== -->
+

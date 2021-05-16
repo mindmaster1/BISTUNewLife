@@ -1,0 +1,9 @@
+<image
+ wx:for='{{arr}}'
+ wx:key='index'
+ animation='{{animations[index]}}'
+ class='heart'
+ style='left:{{lefts[index]}}px;top:{{tops[index]}}px;width:{{widths[index]}}rpx;height:{{widths[index]}}rpx;'
+ src='https://wechatimages-1302630697.cos.ap-beijing.myqcloud.com/weather/heartbeat.png'
+></image>
+

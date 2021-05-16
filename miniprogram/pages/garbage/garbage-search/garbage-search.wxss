@@ -1,0 +1,72 @@
+.bg-darkGray {
+	background-color:  #f6f6f6;
+	color:#ffffff;
+}
+.cu-bar .search-form {
+  background-color:  #ffffff;
+}
+
+.filter-view {
+  display: flex;
+  flex-direction: column;
+}
+.item-view{
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx 50rpx;
+  height: 90rpx;
+  align-items: center;
+}
+.img{
+  height: 50rpx;
+  width: 50rpx;
+  margin-right: 30rpx;
+}
+.item-ji {
+  background-color:  #f6f6f6;
+	color:black;
+}
+.cu-dialog{
+  width: 300rpx;
+}
+.bg-img{
+  width: 300rpx;
+  height: 300rpx;
+}
+
+
+.hr{/*分隔线*/
+  border:1px solid #cccccc;
+  opacity: 0.2;
+}
+.title{/*热门搜索标题行*/
+  display: flex;
+  flex-direction: row;
+  padding:10px;
+}
+.left{/*热门搜索*/
+  width: 80%;
+  font-size: 15px;
+}
+.right{/*换一批*/
+  width:20%;
+  font-size: 13px;
+  color: #E4393C;
+  text-align: right;
+}
+.tips{/*热门搜索供选项*/
+  padding:10px;
+}
+.tip{/*每一个供选项*/
+  background-color: #E8E8ED;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 13px;
+  margin-right: 10px;
+  float: left;
+  margin-bottom: 10px;
+}
